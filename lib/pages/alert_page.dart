@@ -35,12 +35,12 @@ class AlertPage extends StatelessWidget {
       context: context2,
       builder: (BuildContext context2){
         return AlertDialog(
-          
-          title: CircleAvatar(
+          icon: CircleAvatar(
             backgroundImage: AssetImage(
               "assets/images/foto.jpeg",
             ),
           ),
+          title: Text("Blog post published"),
           backgroundColor: Colors.grey,
           content: Text(
             "This blog post has been published . Team members will be able to edit this post and republish changes ."),
@@ -68,7 +68,8 @@ class AlertPage extends StatelessWidget {
       context: context3,
       builder: (BuildContext context3){
         return AlertDialog(
-          title: Text("AlertDialog example!!!"),
+          icon: Image.asset("assets/images/apruebeme.jpg"),
+          title: Text("Your video has been upload!"),
           backgroundColor: Colors.grey,
           content: Text(
             "Este es un ejemplo del AlertDialog. esto es un texto de prueba"),
