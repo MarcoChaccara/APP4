@@ -72,7 +72,7 @@ class AlertPage extends StatelessWidget {
           title: Text("Your video has been upload!"),
           backgroundColor: Colors.grey,
           content: Text(
-            "Este es un ejemplo del AlertDialog. esto es un texto de prueba"),
+            "You're video has finished uploading and is live"),
           actions: [
             TextButton(
               onPressed: (){
