@@ -35,10 +35,7 @@ class _SelectionPageState extends State<SelectionPage> {
                 hintText: '${date.year}/${date.month}/${date.day}',
               ),
               
-            ),
-            ElevatedButton (
-              child : Text ( ' Select Date ' ) ,
-              onPressed : ( ) async {
+              onTap : ( ) async {
                 DateTime? newDate = await showDatePicker (
                   context: context,
                   initialDate: date,
@@ -49,6 +46,7 @@ class _SelectionPageState extends State<SelectionPage> {
                 setState(() => date = newDate);
               },
             ),
+            
           ],
         ),
       ),
