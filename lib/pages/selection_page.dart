@@ -32,8 +32,11 @@ class _SelectionPageState extends State<SelectionPage> {
           children: [
             TextField(
               decoration: InputDecoration(
+                icon: Icon(Icons.calendar_today),
+                labelText: "Ingrese fecha de nacimiento",
                 hintText: '${date.year}/${date.month}/${date.day}',
               ),
+              readOnly: true,
               
               onTap : ( ) async {
                 DateTime? newDate = await showDatePicker (
